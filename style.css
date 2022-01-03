@@ -4,6 +4,61 @@
     font-family: 'Niramit', sans-serif;
 }
 
+.topnav{
+    justify-content: space-between;
+    position: center fixed;
+    background-attachment: fixed;
+    background-color: rgba(212, 209, 209, 0.4)
+}
+
+.topnav ul{
+    text-align: center;
+}
+
+.topnav ul li{
+    display: inline-flex;
+    position: relative;
+    border-left: 0.5px ridge rgba(80, 74, 74, 0.247);
+    border-right: 0.5px ridge rgba(80, 74, 74, 0.247);
+}
+
+.topnav ul li a{
+    color:#fff;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+    padding: 0vh 7vw;
+    font-size: 1.75vw;
+}
+
+.topnav ul li a:hover{
+    background:rgba(116, 111, 111, 0.247);
+    color: rgb(187, 187, 187)
+}
+
+.hello{
+    margin: 0 auto;
+    width: 52 em;
+    padding: 0vh 3vw;
+}
+
+.hello h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.75vw;
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+    letter-spacing: .15em; /* Adjust as needed */
+}
+
+.hello p{
+      color: #fff;
+      text-align: left;
+      font-size: 14;
+      padding: 6vh 0vw
+    }
+
 .intro{
     min-height: 100vh;
     width: 100%;
@@ -13,73 +68,8 @@
     position: relative;
 }
 
-.topnav{
-    width: auto;
-    justify-content: space-between;
-    background-attachment: fixed;
+.panel{
+    min-height: 80vh;
+    width: 100%;
+    background-color: white;
 }
-
-.topnav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.topnav ul li{
-    display: inline-table;
-    padding: 0.4vh 7vw;
-    position: relative;
-}
-
-.topnav ul li a{
-    color:#000;
-    text-decoration: underline;
-    text-align: center;
-    display: block;
-    font-size: 2vw;
-}
-
-.topnav ul li:hover{
-    background:rgba(170, 164, 164, 0.247)
-}
-
-.hello{
-    margin: 0 auto;
-    width: 52 em;
-    padding: 3vh 3vw;
-}
-
-/* Code borrowed from https://css-tricks.com/snippets/css/typewriter-effect/.
-Cool typewriter effect I had in mind for designing intro section. */
-.hello h1{
-    text-align: center;
-    font-size: 2.75vw;
-    color: #fff;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
-
-  .hello p{
-      text-align: left
-      font-size: 
-  }
