@@ -108,7 +108,21 @@
 .carousel-slide {
     display: flex;
     width: 100%;
-    height: 435 px;
+    height: 435px;
+}
+
+.carousel-slide .image img{
+    height: 435px;
+}
+
+.image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
 }
 
 #prevBtn {
