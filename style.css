@@ -2,21 +2,28 @@
     margin: 0;
     padding: 0;
     font-family: 'Niramit', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .topnav{
-    justify-content: space-between;
-    position: center fixed;
-    background-color: rgba(114, 113, 113, 0.356)
+
+    background-color: rgba(114, 113, 113, 0.356);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1030;
 }
 
 .topnav ul{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .topnav ul li{
-    display: inline-flex;
-    position: relative;
+    display: flex;
     border-left: 0.5px ridge rgba(80, 74, 74, 0.247);
     border-right: 0.5px ridge rgba(80, 74, 74, 0.247);
 }
@@ -25,7 +32,6 @@
     color:#fff;
     text-decoration: underline;
     text-align: center;
-
     padding: 0vh 7vw;
     font-size: 1.75vw;
 }
@@ -36,7 +42,7 @@
 }
 
 .intro{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(rgba(214, 134, 69, 0.288), rgba(0, 0, 0, 0.493)), url(images/background-1.jpg);
     background-position: center;
@@ -44,7 +50,7 @@
 }
 
 .container{
-    padding: 1.5vh 0vw;
+    padding: 8vh 0vw;
     display: flex;
     justify-content: center;
 }
@@ -77,19 +83,18 @@
     grid-template-columns: 19.5vw 19.5vw;
     column-gap: 40%;
     color: #fff;
-
-    padding: 5vh 16vw;
+    padding: 0vh 16vw;
     word-wrap: break-word;
 }
 .hello p.left{
     text-align: right; 
-    font-size: 3vh;
+    font-size: 1.25vw;
     font-weight: bold;
 }
 
 .hello p.right{
     text-align: left;
-    font-size: 2.35vh;
+    font-size: 1.25vw;
     font-weight: bold;
 }
 
@@ -174,4 +179,9 @@
     color: white;
     opacity: 0.7;
     right: 5%;
+}
+
+.aboutme {
+    height: 100vh;
+    width: 100vw;
 }
