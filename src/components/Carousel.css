@@ -1,0 +1,50 @@
+.carousel-wrapper {
+    max-width: 80vw;
+    max-height: 80vh;
+    margin: 5vh auto;
+    padding: 1rem;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+    color: #000;
+}
+
+.carousel-background {
+  background-color: #bfe5ff;
+  opacity: 100%;
+  width: 100%;
+  padding: 1vh 0;
+}
+
+.carousel-img {
+    max-height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.carousel-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.carousel-caption {
+    color: #fff; /* or any color you want */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* improves readability */
+    background-color: rgba(0, 0, 0, 0.3); /* optional: adds semi-transparent background */
+    padding: 4rem;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+
+    background-color: rgba(0, 0, 0, 0.4); /* Optional: darken background for visibility */
+    border-radius: 5vw;
+    
+}
